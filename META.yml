@@ -1,0 +1,31 @@
+---
+abstract: 'Test piddles for equality'
+author:
+  - 'Edward Baudrez <ebaudrez@cpan.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  PDL: 0
+  Test::Builder::Tester: 0
+  Test::Exception: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300022, CPAN::Meta::Converter version 2.120630'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Test-PDL
+requires:
+  Exporter: 0
+  PDL::Lite: 0
+  Test::Builder: 0
+  base: 0
+  strict: 0
+  warnings: 0
+resources:
+  homepage: https://github.com/ebaudrez/Test-PDL
+  repository: https://github.com/ebaudrez/Test-PDL.git
+version: 0.02

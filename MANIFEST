@@ -8,6 +8,7 @@ README
 dist.ini
 lib/Test/PDL.pm
 t/00-compile.t
+t/import_options.t
 t/is_pdl.t
 t/release-changes_has_content.t
 t/release-cpan-changes.t

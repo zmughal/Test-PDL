@@ -16,6 +16,7 @@ my %WriteMakefileArgs = (
     "File::Temp" => 0,
     "PDL" => 0,
     "Test::Builder::Tester" => 0,
+    "Test::Deep" => 0,
     "Test::Exception" => 0,
     "Test::More" => 0
   },
@@ -34,7 +35,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }

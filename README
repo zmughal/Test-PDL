@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Test-PDL,
-version 0.03:
+version 0.04:
 
-  Test piddles for equality
+  Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 This software is copyright (c) 2012 by Edward Baudrez.
 

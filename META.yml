@@ -1,19 +1,21 @@
 ---
-abstract: 'Test piddles for equality'
+abstract: 'Test Perl Data Language arrays (a.k.a. piddles) for equality'
 author:
   - 'Edward Baudrez <ebaudrez@cpan.org>'
 build_requires:
+  Capture::Tiny: 0
   File::Find: 0
   File::Temp: 0
   PDL: 0
   Test::Builder::Tester: 0
   Test::Deep: 0
   Test::Exception: 0
-  Test::More: 0
+  Test::More: 0.88
+  Test::NoWarnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300021, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300022, CPAN::Meta::Converter version 2.120630'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,10 +25,11 @@ requires:
   Exporter: 0
   PDL::Lite: 0
   Test::Builder: 0
+  Test::Deep::Cmp: 0
   base: 0
   strict: 0
   warnings: 0
 resources:
   homepage: https://github.com/ebaudrez/Test-PDL
   repository: https://github.com/ebaudrez/Test-PDL.git
-version: 0.03
+version: 0.04

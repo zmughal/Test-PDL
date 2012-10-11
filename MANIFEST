@@ -6,8 +6,14 @@ META.yml
 Makefile.PL
 README
 dist.ini
+lib/Test/Deep/PDL.pm
 lib/Test/PDL.pm
 t/00-compile.t
+t/000-report-versions-tiny.t
+t/deep.t
+t/eq_pdl.t
+t/eq_pdl_clean.t
+t/eq_pdl_diag.t
 t/import_options.t
 t/is_pdl.t
 t/release-changes_has_content.t

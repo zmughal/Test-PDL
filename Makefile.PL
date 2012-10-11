@@ -9,16 +9,18 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Test piddles for equality",
+  "ABSTRACT" => "Test Perl Data Language arrays (a.k.a. piddles) for equality",
   "AUTHOR" => "Edward Baudrez <ebaudrez\@cpan.org>",
   "BUILD_REQUIRES" => {
+    "Capture::Tiny" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "PDL" => 0,
     "Test::Builder::Tester" => 0,
     "Test::Deep" => 0,
     "Test::Exception" => 0,
-    "Test::More" => 0
+    "Test::More" => "0.88",
+    "Test::NoWarnings" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
@@ -31,11 +33,12 @@ my %WriteMakefileArgs = (
     "Exporter" => 0,
     "PDL::Lite" => 0,
     "Test::Builder" => 0,
+    "Test::Deep::Cmp" => 0,
     "base" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.03",
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }

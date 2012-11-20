@@ -1,6 +1,6 @@
 package Test::PDL;
 {
-  $Test::PDL::VERSION = '0.04'; # TRIAL
+  $Test::PDL::VERSION = '0.05';
 }
 
 # ABSTRACT: Test Perl Data Language arrays (a.k.a. piddles) for equality
@@ -180,7 +180,7 @@ Test::PDL - Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

@@ -32,4 +32,4 @@ requires:
 resources:
   homepage: https://github.com/ebaudrez/Test-PDL
   repository: https://github.com/ebaudrez/Test-PDL.git
-version: 0.05
+version: 0.06

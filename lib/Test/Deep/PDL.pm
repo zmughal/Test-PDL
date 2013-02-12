@@ -3,7 +3,7 @@ use warnings;
 
 package Test::Deep::PDL;
 {
-  $Test::Deep::PDL::VERSION = '0.06';
+  $Test::Deep::PDL::VERSION = '0.07';
 }
 
 # ABSTRACT: Test piddles inside data structures with Test::Deep
@@ -55,6 +55,7 @@ sub renderGot
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -63,7 +64,7 @@ Test::Deep::PDL - Test piddles inside data structures with Test::Deep
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 DESCRIPTION
 
@@ -87,10 +88,9 @@ Edward Baudrez <ebaudrez@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Edward Baudrez.
+This software is copyright (c) 2013 by Edward Baudrez.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

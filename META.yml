@@ -6,6 +6,7 @@ build_requires:
   Capture::Tiny: 0
   File::Find: 0
   File::Temp: 0
+  List::MoreUtils: 0
   PDL: 0
   Test::Builder::Tester: 0
   Test::Deep: 0
@@ -32,4 +33,4 @@ requires:
 resources:
   homepage: https://github.com/ebaudrez/Test-PDL
   repository: https://github.com/ebaudrez/Test-PDL.git
-version: 0.07
+version: 0.08

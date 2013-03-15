@@ -3,7 +3,7 @@ use warnings;
 
 package Test::Deep::PDL;
 {
-  $Test::Deep::PDL::VERSION = '0.07';
+  $Test::Deep::PDL::VERSION = '0.08';
 }
 
 # ABSTRACT: Test piddles inside data structures with Test::Deep
@@ -64,7 +64,7 @@ Test::Deep::PDL - Test piddles inside data structures with Test::Deep
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 DESCRIPTION
 

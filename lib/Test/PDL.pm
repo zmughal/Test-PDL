@@ -1,6 +1,6 @@
 package Test::PDL;
 {
-  $Test::PDL::VERSION = '0.07';
+  $Test::PDL::VERSION = '0.08';
 }
 
 # ABSTRACT: Test Perl Data Language arrays (a.k.a. piddles) for equality
@@ -108,8 +108,8 @@ sub is_pdl
 		my $rc = $tb->ok( 0, $name );
 		my $fmt = '%-8T %-12D (%-5S) ';
 		$tb->diag( "    $reason\n",
-			   "         got: ", eval { $got->isa('PDL') }      ? $got->info( $fmt )      : '', $got, "\n",
-			   "    expected: ", eval { $expected->isa('PDL') } ? $expected->info( $fmt ) : '', $expected );
+			   "         got: ", eval { $got->isa('PDL')      && !$got->isnull      } ? $got->info( $fmt )      : '', $got, "\n",
+			   "    expected: ", eval { $expected->isa('PDL') && !$expected->isnull } ? $expected->info( $fmt ) : '', $expected );
 		return $rc;
 	}
 	else {
@@ -184,7 +184,7 @@ Test::PDL - Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 

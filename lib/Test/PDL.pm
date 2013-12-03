@@ -1,6 +1,6 @@
 package Test::PDL;
 {
-  $Test::PDL::VERSION = '0.09';
+  $Test::PDL::VERSION = '0.10';
 }
 
 # ABSTRACT: Test Perl Data Language arrays (a.k.a. piddles) for equality
@@ -9,6 +9,7 @@ package Test::PDL;
 use strict;
 use warnings;
 use PDL::Lite;
+use PDL::Types ();
 
 use base qw( Exporter );
 our @EXPORT = qw( is_pdl );
@@ -142,17 +143,16 @@ sub test_pdl
 }
 
 
-for my $type ( qw/byte short ushort long longlong float double/ ) {
-	my $ctor = do {
-		local *slot = $PDL::{ $type };
-		*slot{CODE}
-	};
+for my $type ( PDL::Types::types ) {
 	my $sub = sub {
 		require Test::Deep::PDL;
-		my $expected = $ctor->( @_ );
+		my $expected = PDL::convert(
+			PDL::Core::alltopdl( 'PDL', scalar(@_) > 1 ? [@_] : shift ),
+			$type->numval
+		);
 		return Test::Deep::PDL->new( $expected );
 	};
-	my $sub_name = 'test_' . $type;
+	my $sub_name = 'test_' . $type->convertfunc;
 	{
 		no strict 'refs';
 		*$sub_name = $sub;
@@ -184,7 +184,7 @@ Test::PDL - Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -479,8 +479,8 @@ You should rather do
 test_pdl() will correctly set the type of the expected value to I<short> in the
 above example.
 
-=for Pod::Coverage test_byte test_short test_ushort test_long test_longlong
-test_float test_double
+=for Pod::Coverage test_byte test_short test_ushort test_long test_indx
+test_longlong test_float test_double
 
 =head2 set_options
 

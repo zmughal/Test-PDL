@@ -21,7 +21,9 @@ my %WriteMakefileArgs = (
   "NAME" => "Test::PDL",
   "PREREQ_PM" => {
     "Exporter" => 0,
+    "PDL" => "2.004",
     "PDL::Lite" => 0,
+    "PDL::Types" => 0,
     "Test::Builder" => 0,
     "Test::Deep::Cmp" => 0,
     "base" => 0,
@@ -30,8 +32,6 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "Capture::Tiny" => 0,
-    "File::Find" => 0,
-    "File::Temp" => 0,
     "List::MoreUtils" => 0,
     "PDL" => 0,
     "PDL::Core" => 0,
@@ -39,9 +39,10 @@ my %WriteMakefileArgs = (
     "Test::Deep" => 0,
     "Test::Exception" => 0,
     "Test::More" => "0.88",
-    "Test::NoWarnings" => 0
+    "Test::NoWarnings" => 0,
+    "blib" => 0
   },
-  "VERSION" => "0.09",
+  "VERSION" => "0.10",
   "test" => {
     "TESTS" => "t/*.t"
   }

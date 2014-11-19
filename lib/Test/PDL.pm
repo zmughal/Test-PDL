@@ -1,8 +1,5 @@
 package Test::PDL;
-{
-  $Test::PDL::VERSION = '0.10';
-}
-
+$Test::PDL::VERSION = '0.11';
 # ABSTRACT: Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 
@@ -178,13 +175,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Test::PDL - Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
@@ -521,7 +520,7 @@ Edward Baudrez <ebaudrez@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Edward Baudrez.
+This software is copyright (c) 2014 by Edward Baudrez.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

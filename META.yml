@@ -4,19 +4,22 @@ author:
   - 'Edward Baudrez <ebaudrez@cpan.org>'
 build_requires:
   Capture::Tiny: 0
+  File::Spec: 0
+  IO::Handle: 0
+  IPC::Open3: 0
   List::MoreUtils: 0
-  PDL: 0
+  PDL: 2.004
   PDL::Core: 0
   Test::Builder::Tester: 0
   Test::Deep: 0
   Test::Exception: 0
   Test::More: 0.88
   Test::NoWarnings: 0
-  blib: 0
+  perl: 5.006
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: 0
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131490'
+generated_by: 'Dist::Zilla version 5.025, CPAN::Meta::Converter version 2.142690'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -35,4 +38,4 @@ requires:
 resources:
   homepage: https://github.com/ebaudrez/Test-PDL
   repository: https://github.com/ebaudrez/Test-PDL.git
-version: 0.10
+version: 0.11

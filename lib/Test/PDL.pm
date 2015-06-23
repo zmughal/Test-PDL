@@ -1,5 +1,5 @@
 package Test::PDL;
-$Test::PDL::VERSION = '0.11';
+$Test::PDL::VERSION = '0.12';
 # ABSTRACT: Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 
@@ -183,7 +183,7 @@ Test::PDL - Test Perl Data Language arrays (a.k.a. piddles) for equality
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 SYNOPSIS
 
@@ -478,8 +478,8 @@ You should rather do
 test_pdl() will correctly set the type of the expected value to I<short> in the
 above example.
 
-=for Pod::Coverage test_byte test_short test_ushort test_long test_indx
-test_longlong test_float test_double
+=for Pod::Coverage test_anyval test_byte test_short test_ushort test_long
+test_indx test_longlong test_float test_double
 
 =head2 set_options
 
@@ -520,7 +520,7 @@ Edward Baudrez <ebaudrez@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Edward Baudrez.
+This software is copyright (c) 2015 by Edward Baudrez.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

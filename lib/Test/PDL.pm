@@ -447,7 +447,7 @@ test_indx test_longlong test_float test_double
 
 =cut
 
-for my $type ( PDL::Types::types ) {
+for my $type ( grep { $_ !~ /^c(float|double)$/ } PDL::Types::types ) {
 	my $sub = sub {
 		require Test::Deep::PDL;
 		my $expected = PDL::convert(
